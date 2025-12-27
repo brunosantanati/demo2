@@ -1,0 +1,10 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.bruno.santana.UpgradeDependency
+displayName: Upgrade commons-lang3 to 3.19.0
+description: Upgrades commons-lang3 dependency version
+recipeList:
+  - org.openrewrite.maven.UpgradeDependencyVersion:
+      groupId: org.apache.commons
+      artifactId: commons-lang3
+      newVersion: '3.19.0'
